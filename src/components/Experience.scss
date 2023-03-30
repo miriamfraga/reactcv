@@ -1,0 +1,52 @@
+.section__container__experience{
+    width: 80%;
+    // background-color: pink;
+    padding: 2%;
+    margin-top: 1%;
+    display:flex;
+    
+    &__div{
+         display:flex;
+         width: calc(30%);
+         flex-direction: column;
+         padding:2%;
+         border-color: rgb(143, 241, 228);
+        //  background-color:rgb(175, 214, 231);
+         margin: 1%;
+         height: 300px;
+         border-radius: 10%;
+         border-style:outset;
+         justify-content: center;
+         
+         &:hover{
+            scale: 1.1;
+            background-color: rgb(158, 226, 223);
+          
+           
+         }
+
+       
+        &__title{
+            max-width: 90%;
+            padding: 2%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            color: rgb(96, 94, 94);
+
+            &__name:hover{
+                display: none;
+
+            }
+            &__name:hover ~ #hide{
+              display: block;
+                
+             }
+       }
+    }
+}
+
+#hide{
+    display: none;
+    border-radius: 5%;
+    color: rgb(40, 40, 38);
+}
